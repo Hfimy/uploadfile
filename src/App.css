@@ -1,0 +1,143 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.overlay{
+  box-sizing:border-box;
+  position: fixed;
+  top:50%;
+  left:50%;
+  width:600px;
+  height:500px;
+  margin-left:-300px;
+  margin-top:-310px;
+  background-color: #fff;
+  outline: rgba(0,0,0,.5) solid 9999px;
+  border-radius: 5px;
+}
+.overlay-close{
+  position: absolute;
+  top:5px;
+  right:15px;
+  color:#000;
+  cursor: pointer;
+  font-size:40px;
+  line-height:40px;
+  font-weight: lighter;
+  opacity: .4;
+}
+.overlay-close:hover{
+  opacity:1;
+}
+h4{
+  text-align: center;
+}
+.row{
+  height:30px;
+  line-height: 30px;
+  font-size:14px;
+  margin:40px auto;
+}
+.row label{
+  /* display:inline-block; */
+  margin-left:45px;
+  font-weight:bold;
+  margin-right:10px;
+}
+.row input{
+  border:solid 1px #bbb;
+  height:30px;
+  width:430px;
+  text-indent: 10px;
+  font-size: 14px;
+}
+.media{
+  width:498px;
+  height:200px;
+  border:solid 1px #bbb;
+  margin-left:45px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.media video{
+  max-width:498px;
+  max-height:198px;
+  border:none;
+}
+.media img{
+  max-width:498px;
+  max-height:198px;
+  border:none;
+}
+.media textarea{
+  resize:none;
+  box-sizing: border-box;
+  padding:10px;
+  width:498px;
+  height:198px;
+  border:none;
+}
+.row-input{
+  display:inline-block;
+  outline: solid 1px #bbb;
+  background-color: #eee;
+  position: relative;
+}
+.row-input input{
+  opacity:0;
+}
+.row-input span{
+  position: absolute;
+  left:10px;
+  font-weight: normal;
+  opacity: .3;
+}
+button.primary{
+  float:right;
+  margin:20px 25px 20px 0;
+  height:30px;
+  padding:6px 40px;
+  border:none;
+  border-radius: 4px;
+  color:#fff;
+}
+button.upload{
+  margin-right:54px;
+  background-color: #00bcff;
+  background: -webkit-gradient(linear, left 0, right 0, from(#00bcff), to(#00d8ff))
+}
+button.cancel{
+  color:#808080;
+  background-color: #fff;
+  border:solid 1px #adadad;
+}
+button.cancel:hover{
+  background-color: #f7f7f7;
+}
